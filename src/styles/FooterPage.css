@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items horizontally */
+  margin: 5vh;
+}
+
+.footer-left,
+.footer-right {
+  margin-bottom: 20px; /* Add some space between sections */
+}
+
+.footer-right h2 {
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row; /* Display items in a row on larger screens */
+    justify-content: space-around; /* Distribute items horizontally */
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 50%; /* Make each section take up half of the container */
+  }
+}

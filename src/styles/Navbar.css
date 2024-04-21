@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fdf2e9; */
+  color: #333;
+  padding: 2vh 4vw;
+}
+
+.logo_img {
+  height: 8vh;
+  width: 12vw;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2vh;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.nav-items a:hover {
+  color: #cf711f;
+}
+
+/* Media queries for responsive font size */
+@media screen and (max-width: 768px) {
+  .logo_img {
+    height: 5vh; /* Decreased logo height for smaller screens */
+    width: auto; /* Allow logo width to adjust dynamically */
+  }
+
+  .nav-items {
+    gap: 1vw; /* Decreased gap between nav items */
+  }
+
+  .nav-items a {
+    font-size: 1.2vh; /* Decreased font size for smaller screens */
+  }
+}
+

@@ -1,0 +1,101 @@
+.Intro {
+  display: flex;
+  height: auto; /* Adjusted height */
+  margin-top: 6rem;
+}
+
+.i-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  flex: 1; /* Added flex: 1 */
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.i-name > * {
+  text-align: center;
+}
+
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 20px;
+  color: var(--blue);
+  margin-top: 10px;
+}
+
+.i-icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.i-icons img {
+  width: 30px; /* Adjusted icon size */
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-right img {
+  width: 100%; /* Ensure image fills its container */
+}
+
+.blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #edd0ff;
+  filter: blur(20px); /* Adjusted blur */
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .Intro {
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+
+  .i-left,
+  .i-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .i-right {
+    margin-top: 2rem;
+  }
+
+  .i-right img {
+    display: none;
+  }
+
+  .i-icons {
+    margin-top: 1rem;
+  }
+
+  .i-name span {
+    font-size: 18px;
+  }
+}

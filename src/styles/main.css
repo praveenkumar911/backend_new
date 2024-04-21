@@ -1,0 +1,20 @@
+/* Add this CSS to your stylesheets */
+.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure the navbar stays on top */
+  }
+  
+  .content {
+    padding-top: 6rem; /* Adjust padding to accommodate fixed navbar */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      position: static; /* Reset position for smaller screens */
+      width: auto;
+    }
+  }
+  
